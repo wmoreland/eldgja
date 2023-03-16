@@ -1,0 +1,69 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+			<h1>Magma Ascent Rates, Shallow Conduit Evolution and Explosivity in Basaltic Eruptions</h1>
+			<p>
+				The 10th century Eldgjá fissure eruption featured strong explosive episodes, up to Plinian intensities,
+				despite having a basaltic magma composition which is not viscous enough to fragment according to classical
+				fragmentation models. Other basaltic subplinian to Plinian eruptions have variously had their explosivity
+				attributed to excess dissolved volatiles, higher viscosities due to lower temperature or increased crystal
+				cargo, or rapid magma ascent rate sufficient to keep the bubble population coupled to the rising melt. 
+				Currently there is no decisive explanation to the intense basaltic explosive conundrum. The aim of this
+				project is to address this global question by examining the Eldgjá eruption and answering the main research
+				question: <b>What made Eldgjá so explosive?</b> The project has three main lines of enquiry:
+			</p>
+
+			<p>
+				<b>1. What was the melt versus gas bubble ascent rate at Eldgjá?</b>
+			</p>
+			<p>
+					Low ascent rates result in decoupling of melt and bubbles during rise towards the surface and
+					typically support explosive activity of low intensity. However, high ascent rate makes coupling
+					of bubbles and melt during its rise through the shallow conduit more likely, thus resulting in
+					high intensity explosive decompression of the system upon venting. Thus, the melt ascent rate is
+					a critical variable yet rarely quantified. Ascent rate of the Eldgjá magma will be assessed using
+					lithium diffusion modelling which resolves processes taking place on the scale of minutes to hours.
+					This result, along with available vesicle size distribution data will be used to evaluate the degree
+					of melt-bubble coupling during the Eldgjá eruption.
+			</p>
+			<p>
+				<b>2. What controls localization of activity along a fissure in basaltic eruptions?</b>
+			</p>
+			<p>
+				Is localization of activity along a fissure purely an artefact of the along-strike variation in fissure
+				width or do other magma-intrinsic factors play a role? Moreland et al. Identified textural variations in
+				the Eldgjá tephra suggesting partial clogging of the conduit by degassed and microlite-rich magma and as
+				such may have contributed to the process of localization of magma venting. This will be explored further
+				by mapping the distribution (i.e. change in time and space) of relevant crystal and vesicle textures in
+				the near-vent tephra deposit along selected segments of the Eldgjá fissure in order to examine the possible
+				linkage to localization of magma venting.
+			</p>
+			<p>
+				<b>3. Is ascent rate increased by localization of activity on a linear vent system sufficient to produce a coupled melt-bubble rise and thus high-intensity explosive activity?</b>
+			</p>
+			<p>
+				The vast majority of studies looking at intense explosive basaltic eruptions have either invoked excess
+				volatiles or sudden increase in magma stiffness (i.e., viscosity) in the shallow conduit via degassing-induced
+				microlite crystallization as an explanation for enhanced explosive intensity. However, neither offer a
+				good explanation for the established intensity of explosive basaltic eruptions in Iceland because they do
+				not carry excess volatiles and nor are they particularly microlite rich. Therefore, we plan to
+				investigate whether enhanced ascent rate via localization of activity on a linear vent system, given that
+				other parameters are favorable, can push the explosive realm of the system into stae of Plinian intensities.
+			</p>
+
+		</main>
+		<Footer />
+	</body>
+</html>

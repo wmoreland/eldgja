@@ -1,0 +1,73 @@
+---
+import Layout from '../layouts/BlogPost.astro';
+---
+
+<Layout
+	title="Research Plan"
+	description="Lorem ipsum dolor sit amet"
+	pubDate={new Date('16 March 2023')}
+	updatedDate={new Date('16 March 2023')}
+>
+	<p>
+		The research plan, as submitted to Rannís, is split into 4 work packages running over 3 years.
+	</p>
+	
+	<p>
+		The work packages are:
+		<ul>
+			<li>
+				WP1 - Field mapping and sampling
+			</li>
+			<li>
+				WP2 - Textural analysis
+			</li>
+			<li>
+				WP3 - Geochemical analysis
+			</li>
+			<li>
+				WP4 -  Conceptual model, synthesis, dissemination, and outreach
+			</li>
+		  </ul>
+	</p>
+
+	<svg id="gantt"></svg>
+
+</Layout>
+
+<script>
+	var tasks = [
+  {
+	id: 'WP1',
+	name: 'WP1 Fieldwork',
+	start: '2022-07-01',
+	end: '2022-08-31',
+  },
+  {
+	id: 'WP1',
+	name: 'WP1 Fieldwork',
+	start: '2023-06-01',
+	end: '2023-08-31',
+  },
+  {
+	id: 'WP2',
+	name: 'WP2 Textural analysis',
+	start: '2022-09-01',
+	end: '2023-04-30',
+  },
+  {
+	id: 'WP3',
+	name: 'WP3 Geochemical analysis',
+	start: '2024-03-01',
+	end: '2025-02-28',
+  },
+  {
+	id: 'WP4',
+	name: 'WP4 Project synthesis',
+	start: '2025-03-01',
+	end: '2025-06-30',
+  },
+]
+// @ts-ignore
+var gantt = new Gantt("#gantt", tasks);
+gantt.change_view_mode('Year');
+</script>
